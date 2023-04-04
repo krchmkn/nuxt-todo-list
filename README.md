@@ -1,6 +1,6 @@
 # Todo list
 
-[Demo](https://inspiring-torte-a09f58.netlify.app/)
+[Demo](https://nuxt-todo-list.netlify.app/)
 
 ## Install
 ```sh
