@@ -1,14 +1,8 @@
 <template>
   <Transition>
-    <main class="container">
+    <main>
       <AppCard />
       <AppCopyright />
     </main>
   </Transition>
 </template>
-
-<style lang="scss" scoped>
-.container {
-  padding-top: 84px;
-}
-</style>

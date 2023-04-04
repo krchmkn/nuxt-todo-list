@@ -13,10 +13,17 @@
   outline-color: $white;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   background: $gray-dark;
   background: radial-gradient(50% 50% at 50% 50%, $gray 0%, $gray-dark 100%);
-  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 16px;
   color: $white;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
