@@ -6,7 +6,6 @@
   padding: 0;
   font-weight: normal;
   word-break: break-word;
-
 }
 
 *:focus {
@@ -16,6 +15,7 @@
 html,
 body {
   min-height: 100%;
+  min-width: 360px;
 }
 
 body {

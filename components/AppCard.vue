@@ -29,7 +29,7 @@ function add(id: number) {
   })
 }
 
-for (let i = 1; i <= 4; ++i) add(i);
+for (let i = 1; i <= 10; ++i) add(i);
 </script>
 
 <style lang="scss" scoped>
