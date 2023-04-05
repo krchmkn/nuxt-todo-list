@@ -44,4 +44,15 @@ watch(props.list, scrollBottom, { flush: 'post' });
   list-style: none;
   width: 100%;
 }
+
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+.list::-webkit-scrollbar-thumb {
+  background: $orange;
+  border-radius: 4px;
+}
+.list::-webkit-scrollbar-thumb:hover {
+  background: $orange;
+}
 </style>
