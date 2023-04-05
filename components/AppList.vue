@@ -20,7 +20,7 @@ const props = defineProps<{
 
 let audio: HTMLAudioElement
 onBeforeMount(() => {
-  audio = new Audio('/sound.mp3')
+  audio = new Audio('/click.mp3')
 })
 
 function onSelect(payload: SelectedListItem) {

@@ -18,15 +18,24 @@
 <script setup lang="ts">
 const list = ref<Array<ListItem>>([])
 
+let audio: HTMLAudioElement
+onBeforeMount(() => {
+  audio = new Audio('/add.mp3')
+  audio.volume = .2;
+})
+
 function add(id: number) {
-  const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  sed do`
+  const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do`
 
   list.value.push({
     id,
     title: text,
     ...(id % 2 === 0 ? { subtitle: text } : {})
   })
+
+  if (audio) {
+    audio.play()
+  }
 }
 
 for (let i = 1; i <= 10; ++i) add(i);
