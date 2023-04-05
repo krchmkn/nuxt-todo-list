@@ -18,7 +18,15 @@ const props = defineProps<{
   list: Array<ListItem>
 }>()
 
+let audio: HTMLAudioElement
+onBeforeMount(() => {
+  audio = new Audio('/sound.mp3')
+})
+
 function onSelect(payload: SelectedListItem) {
+  if (payload.selected) {
+    audio.play()
+  }
   console.log("onSelect" , payload)
 }
 

@@ -20,12 +20,12 @@ const list = ref<Array<ListItem>>([])
 
 function add(id: number) {
   const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua`
+  sed do`
 
   list.value.push({
     id,
-    title: `${text} ${id}`,
-    ...(id % 2 === 0 ? { subtitle: `${text} ${id}` } : {})
+    title: text,
+    ...(id % 2 === 0 ? { subtitle: text } : {})
   })
 }
 
