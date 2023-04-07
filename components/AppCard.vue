@@ -89,8 +89,8 @@ for (let i = 1; i <= 10; ++i) add(i);
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: 20px;
+      right: 20px;
       background: linear-gradient(180deg, rgba(37, 46, 66, 0) 0%, $gray 67.19%);
       height: 75px;
     }
