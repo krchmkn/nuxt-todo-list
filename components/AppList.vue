@@ -46,6 +46,7 @@ watch(props.list, scrollBottom, { flush: 'post' });
   overflow-x: hidden;
   height: 100%;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .list-item {
